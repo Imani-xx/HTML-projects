@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Unyime Danison">
+        <meta name="description" content="This page contains everything I'm doing while learning HTML">
+        <title>My First Webpage</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+        <body>
+            <h1>Welcome to My First Webpage</h1>
+            <p>I am currently learning HTML</p>
+        <aside>
+            <details>
+                <summary>Do you want to know how many hours I spend coding?</summary>
+                    <p>I'll show you;</p>
+            </details>
+        </aside>
+        <br>
+            <table>
+                <caption><h3>MY DAILY SCHEDULE</h3></caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope="col">TIME</th>
+                    <th scope="col">ACTIVITY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">MORNING</th>
+                    <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                    <td>Write code</td>
+                </tr>
+                <tr>
+                    <th scope="row">BREAK</th>
+                    <td><time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time></td>
+                    <td>Eat lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">AFTERNOON</th>
+                    <td><time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time></td>
+                    <td>Study Biochemistry</td>
+                </tr>
+                <tr>
+                  <th scope="row">EVENING</th>
+                  <td rowspan="2">All other times</td>
+                  <td>Free time</td> 
+                </tr>
+                <tr>
+                    <th scope="row">NIGHT</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">All I do is eat, sleep, code...and recharge</td>
+                </tr>
+            </tfoot>
+            </table>
+            <br>
+            <hr>
+            <br>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>
+                        Your Details
+                    </legend>
+                    <label>
+                        Full Name:
+                        <input type="text" name="fullName" size="30" maxlength="100" placeholder="Jane Doe">
+                    </label>
+                    <p>
+                    <label>
+                        Email:
+                        <input type="email" name="email" size="30" maxlength="100" placeholder="janedoe@example.com">
+                    </label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        Your Review
+                    </legend>
+                    <label for="hearAbout">
+                        How did you hear about us?
+                    </label>
+                    <select name="referrer" id="hearAbout">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advert">Advert</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <p>
+                        Would you visit again?
+                        <br>
+                        <input type="radio" name="rating" value="yes" checked>Yes
+                        <input type="radio" name="rating" value="no">No
+                        <input type="radio" name="rating" value="maybe">Maybe
+                    </p>
+                    <label>
+                        Comments:
+                        <br>
+                        <textarea rows="4" cols="40" placeholder="Start typing..."></textarea>
+                    </label>
+                    <p>
+                        <label>
+                        <input type="checkbox" name="subscribe" value="signUp">
+                        Sign me up for email updates
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <button type="submit">Submit review</button>
+                    </p>
+                </fieldset>
+                <br>
+
+                <h2>Contact Me</h2>
+                <p>I'd really like to hear from you!</p>
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <p>
+                        <label>
+                        First name:
+                        <input type="text" name="firstName" size="30" maxlength="100" placeholder="Jane" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        Last name:
+                        <input type="text" name="lastName" size="30" maxlength="100" placeholder="Doe" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Password:
+                            <input type="password" name="password" placeholder="1234" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Phone:
+                            <input type="tel" name="phoneNumber" placeholder="0123456789" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Date of birth:
+                            <input type="date" name="dateOfBirth">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="favoriteFood">
+                            Favorite food:
+                        </label>
+                        <select name="Favorite food" multiple size="5">
+                            <optgroup label="Carbohydrates">
+                                <option value="rice">Rice</option>
+                                <option value="potatoes">Potatoes</option>
+                                <option value="oats">Oats</option>
+                            </optgroup>
+                            <optgroup label="Proteins">
+                                <option value="eggs">Eggs</option>
+                                <option value="chicken">Chicken</option>
+                                <option value="beef">Beef</option>
+                            </optgroup>
+                            <optgroup label="Vitamins">
+                                <option value="carrots">Carrots</option>
+                                <option value="apricots">Apricots</option>
+                                <option value="oranges">Oranges</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your favorite music?</legend>
+                    <p>
+                        <input type="radio" name="music" value="hip-hop" checked>Hip-hop
+                        <input type="radio" name="music" value="afro-beat">Afro-beat
+                        <input type="radio" name="music" value="pop">Pop
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" value="dog" checked>Dog
+                        <input type="checkbox" name="pets" value="cat">Cat
+                        <input type="checkbox" name="fish" value="goldfish">Goldfish
+                        <input type="checkbox" name="other" value="other">Other
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label>
+                        Your message:
+                    </label>
+                    <br>
+                    <textarea name="message" cols="30" rows="10">Enter your message here...</textarea>
+                </fieldset>
+                <p>
+                <button type="submit">Submit</button>
+                </p>
+            </form>
+            <hr>
+            &lt;&lt;&lt; &copy;Unyime Danison &gt;&gt;&gt;
+        </body>
+</html>
