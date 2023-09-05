@@ -1,1 +1,1 @@
-This repository contains all my tutorials and final project learning HTML.
+This repository contains all my tutorials while learning HTML.
